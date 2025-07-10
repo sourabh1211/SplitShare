@@ -1,6 +1,6 @@
 # SplitShare
 
-![Logo](Mainimage.png)
+![Logo](Main.png)
 
 ---
 
@@ -41,7 +41,7 @@ Whether you're managing trips, shared rentals, or team expenses, SplitShare simp
       <img src="profile.png" width="180" alt="Profile" /><br>Profile
     </td>
     <td align="center">
-      <img src="Mainimage.png" width="180" alt="Main Image" /><br>Main Image
+      <img src="Main.png" width="180" alt="Main Image" /><br>Main Image
     </td>
   </tr>
 </table>
