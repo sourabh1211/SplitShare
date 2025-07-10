@@ -1,6 +1,6 @@
 # SplitShare
 
-![Logo](https://your-image-host/logo.png)
+![Logo](Mainimage.png)
 
 ---
 
