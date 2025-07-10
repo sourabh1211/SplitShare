@@ -26,26 +26,22 @@ Whether you're managing trips, shared rentals, or team expenses, SplitShare simp
 <table>
   <tr>
     <td align="center">
-      <img src="login.png" width="200" alt="Login" /><br>Login
+      <img src="login.png" width="180" alt="Login" /><br>Login
     </td>
     <td align="center">
-      <img src="signup.png" width="200" alt="Signup" /><br>Signup
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="dashboard.png" width="200" alt="Dashboard" /><br>Dashboard
+      <img src="signup.png" width="180" alt="Signup" /><br>Signup
     </td>
     <td align="center">
-      <img src="Group View Page.jpg" width="200" alt="Group Page" /><br>Group Page
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="profile.png" width="200" alt="Profile" /><br>Profile
+      <img src="dashboard.png" width="180" alt="Dashboard" /><br>Dashboard
     </td>
     <td align="center">
-      <img src="Mainimage.png" width="200" alt="Main Image" /><br>Main Image
+      <img src="Group View Page.jpg" width="180" alt="Group Page" /><br>Group Page
+    </td>
+    <td align="center">
+      <img src="profile.png" width="180" alt="Profile" /><br>Profile
+    </td>
+    <td align="center">
+      <img src="Mainimage.png" width="180" alt="Main Image" /><br>Main Image
     </td>
   </tr>
 </table>
