@@ -93,7 +93,7 @@ export default function Login() {
          <Container maxWidth="sm">
           <ContentStyle>
             <Typography variant="h4" gutterBottom>
-              Sign in to SplitApp!
+              Sign in to SplitShare!
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 5 }}>Enter your details below.</Typography>
