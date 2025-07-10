@@ -26,26 +26,26 @@ Whether you're managing trips, shared rentals, or team expenses, SplitShare simp
 <table>
   <tr>
     <td align="center">
-      <img src="https://your-image-host/login.png" width="200" alt="Login" /><br>Login
+      <img src="login.png" width="200" alt="Login" /><br>Login
     </td>
     <td align="center">
-      <img src="https://your-image-host/signup.png" width="200" alt="Signup" /><br>Signup
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://your-image-host/dashboard.png" width="200" alt="Dashboard" /><br>Dashboard
-    </td>
-    <td align="center">
-      <img src="https://your-image-host/group.png" width="200" alt="Group Page" /><br>Group Page
+      <img src="signup.png" width="200" alt="Signup" /><br>Signup
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://your-image-host/expenses.png" width="200" alt="Expenses" /><br>Expenses
+      <img src="dashboard.png" width="200" alt="Dashboard" /><br>Dashboard
     </td>
     <td align="center">
-      <img src="https://your-image-host/analytics.png" width="200" alt="Analytics" /><br>Analytics
+      <img src="Group View Page.jpg" width="200" alt="Group Page" /><br>Group Page
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="profile.png" width="200" alt="Profile" /><br>Profile
+    </td>
+    <td align="center">
+      <img src="Mainimage.png" width="200" alt="Main Image" /><br>Main Image
     </td>
   </tr>
 </table>
@@ -93,7 +93,7 @@ Whether you're managing trips, shared rentals, or team expenses, SplitShare simp
 
 ### Installation
 
-1. Set up environment variables:
-
-Create a `.env` file inside the `server/` folder with the following values:
-
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sourabh1211/SplitShare.git
+   cd SplitShare
