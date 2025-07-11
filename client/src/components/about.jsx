@@ -47,7 +47,7 @@ const About = () => {
         <br />
         <h2 id="introduction">Introduction</h2>
         <br />
-        <p>This is a side project I've been working on — a full-stack expense splitting app, inspired by Splitwise, built using the MERN stack (MongoDB, Express, React, and Node.js). It's specifically designed to help groups of friends manage and split expenses but can also be adapted for other business needs. The app allows users to add expense details and access analytics features such as group balance, monthly spending, and category-wise expense graphs. It was developed during my free time, so while it's fully functional, there may be some issues.
+        <p>This is a side project I've been working on — a full-stack expense splitting app built using the MERN stack (MongoDB, Express, React, and Node.js). It's specifically designed to help groups of friends manage and split expenses but can also be adapted for other business needs. The app allows users to add expense details and access analytics features such as group balance, monthly spending, and category-wise expense graphs. It was developed during my free time, so while it's fully functional, there may be some issues.
 </p>
         <br />
         <center>
