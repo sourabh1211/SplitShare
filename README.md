@@ -12,10 +12,28 @@ A full-stack group expense splitting application built with the MERN stack (Mong
 
 **SplitShare** is a group expense management app built using the MERN stack. It allows users to create groups, invite other users, and manage shared expenses efficiently. Users can:
 
-- Add, update, or delete expenses
-- Settle up balances within groups
-- Perform CRUD operations on users and groups (create, delete, rename, and update)
-- View detailed analytics to understand spending patterns
+## ✨ Features
+
+### 🔐 Authentication
+- Secure **login** and **signup** using JWT and bcrypt for password hashing.
+
+### 📊 Dashboard
+- Interactive **dashboard with charts and graphs** to visualize expenses clearly.
+- View **group-wise summaries** and **individual spending trends**.
+
+### 👥 Group Management
+- **Create new groups** and invite people.
+- **Rename or delete existing groups** easily.
+- Manage members within each group.
+
+### 💸 Expense Management
+- **Add, update, or delete expenses** in specific groups.
+- View **detailed breakdown of each expense**, including contributors.
+- Track **expense slips and history** for transparency.
+
+### 🔁 Settlement
+- Automatically **calculate balances**.
+- View **who owes whom** and **settle up** within the group.
 
 Whether you're managing trips, shared rentals, or team expenses, SplitShare simplifies expense tracking and makes settling up easy and transparent.
 
