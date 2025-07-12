@@ -1,5 +1,4 @@
 <h1 align="center">SplitShare</h1>
-
 ![Logo](Main.png)
 
 ---
