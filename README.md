@@ -1,5 +1,7 @@
 <h1 align="center">SplitShare</h1>
-![Logo](Main.png)
+<p align="center">
+  <img src="Main.png" alt="SplitShare Logo" width="400"/>
+</p>
 
 ---
 
