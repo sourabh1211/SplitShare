@@ -24,7 +24,7 @@ const BalanceSettlement = ({ currencyType, settleTo, settleFrom, amount, handleC
   const [settleSuccess, setSettleSuccess] = useState(false)
   const params = useParams();
 
-  //Formink schema 
+
   const settlementSchema = Yup.object().shape({
     settleTo: Yup.string().required('Settle to is required'),
     settleFrom: Yup.string().required('Settle from is required'),
