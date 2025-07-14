@@ -24,7 +24,7 @@ export const EditGroup = () => {
     const [alertMessage, setAlertMessage] = useState('');
 
 
-    //Formink schema 
+    
     const groupSchema = Yup.object().shape({
         groupName: Yup.string().required('Group name is required'),
         groupDescription: Yup.string(),
