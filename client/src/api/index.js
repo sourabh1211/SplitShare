@@ -1,17 +1,11 @@
 import axios from 'axios'
-
-
 const API = axios.create({ baseURL: 'https://splitshare-lk3r.onrender.com'})
-// const API = axios.create({ baseURL: ''})
-
 const profile = JSON.parse(localStorage.getItem('profile'))
-
 const accessHeader = {
     headers: {
       'Authorization': `token ${profile ? profile.accessToken : null}`
     }
   }
-
 export const loginIn = (formData) => API.post('/api/users/v1/login', formData)
 
 export const register = (formData) => API.post('/api/users/v1/register', formData)
