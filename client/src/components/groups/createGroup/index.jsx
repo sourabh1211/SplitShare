@@ -20,7 +20,7 @@ export default function Creategroup() {
     const [alert, setAlert] = useState(false);
     const [alertMessage, setAlertMessage] = useState('');
    
-    //Formink schema 
+
     const groupSchema = Yup.object().shape({
         groupName: Yup.string().required('Group name is required'),
         groupDescription: Yup.string(),
