@@ -3,18 +3,13 @@ import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 import { Card, CardContent, Typography, Box, AvatarGroup, Avatar, Stack, Grid } from '@mui/material';
 import { convertToCurrency, currencyFind, categoryIcon } from '../../utils/helper';
-// utils
-// components
+
 import Iconify from '../Iconify';
 import gravatarUrl from 'gravatar-url';
 import configData from '../../config.json'
 
 
-// ----------------------------------------------------------------------
 
-
-
-// ----------------------------------------------------------------------
 
 const CategoryStyle = styled('div')(({ theme }) => ({
   zIndex: 9,
