@@ -30,7 +30,6 @@ export default function AddExpense() {
   var [groupMembers,setGroupMembers] = useState()
   var [groupCurrency,setGroupCurrency] = useState()
  
-  //Formink schema 
   const addExpenseSchema = Yup.object().shape({
     expenseName: Yup.string().required('Expense name is required'),
     expenseDescription: Yup.string(),
