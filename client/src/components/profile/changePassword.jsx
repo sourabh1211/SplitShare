@@ -2,10 +2,8 @@ import * as Yup from 'yup';
 import PropTypes from 'prop-types';
 
 import { useFormik, Form, FormikProvider } from 'formik';
-// material
 import { Stack, TextField, IconButton, InputAdornment, Snackbar, Alert, Grid, Button, Input } from '@mui/material';
 
-// component
 import Iconify from '../Iconify';
 import { updatePassword } from '../../services/auth';
 
@@ -13,8 +11,6 @@ import useResponsive from '../../theme/hooks/useResponsive';
 import { LoadingButton } from '@mui/lab';
 import { useState } from 'react';
 import AlertBanner from '../AlertBanner';
-
-// ----------------------------------------------------------------------
 
 ChangePassword.propTypes = {
   emailId: PropTypes.string,
@@ -50,8 +46,6 @@ export default function ChangePassword({ hidePassUpdate, emailId, showHomeAlert,
     },
     validationSchema: RegisterSchema,
     onSubmit: async () => {
-      //User Register Service call - Upon success user is redirected to dashboard
-      //Register fail snackbar displays error
       const update_response = await updatePassword(values, setShowAlert, setAlertMessage, showHomeAlert, homeAlertMessage)
       {
         update_response &&
