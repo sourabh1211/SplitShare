@@ -3,10 +3,6 @@ import { Link as RouterLink } from 'react-router-dom';
 // @mui
 import { styled } from '@mui/material/styles';
 import { Card, Link, Container, Typography, Stack, Box } from '@mui/material';
-
-
-
-// hooks
 import useResponsive from '../../theme/hooks/useResponsive';
 import Logo from '../Logo';
 
@@ -91,7 +87,6 @@ export default function Login() {
             <Typography sx={{ color: 'text.secondary', mb: 5 }}>Open Source, Group expense splitting app!</Typography>
 
             <RegisterForm />
-            {/* <AuthSocial />*/}
 
             {!smUp && (
               <Typography variant="body2" align="center" sx={{ mt: 3 }}>
