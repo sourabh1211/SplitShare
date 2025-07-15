@@ -90,10 +90,7 @@ return (
       {user.emailId && 
       <Avatar src={gravatarUrl(user.emailId, {size: 350, default: configData.USER_DEFAULT_LOGO_URL})} alt="photoURL" sx={{ width: 240, height: 240 }} />}
       <Typography variant="body2" align="center" sx={{ mt: 3, color: 'text.secondary' }}>
-        *The profile picture is taken from Gravitar{' '} <br />
-        <Link variant="subtitle3" component={'a'} href="https://en.gravatar.com/support/faq/" target="_blank">
-        Know how to set gravitar profile pic!
-        </Link>
+        Profile Pic{' '} <br />
       </Typography>
     </Grid>
     <Grid item xs={12} md={6} sx={{mt: 4}}>
