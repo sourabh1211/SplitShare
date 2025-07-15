@@ -1,16 +1,11 @@
 import * as Yup from 'yup';
 import { useState } from 'react';
 import { useFormik, Form, FormikProvider } from 'formik';
-// material
 import {  Stack,  TextField, IconButton, InputAdornment,  Snackbar, Alert } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
-// component
 import Iconify from '../Iconify';
 import { login } from '../../services/auth';
-
 import useResponsive from '../../theme/hooks/useResponsive';
-
-// ----------------------------------------------------------------------
 
 export default function LoginForm() {
   const smUp = useResponsive('up', 'sm');
@@ -33,8 +28,6 @@ export default function LoginForm() {
     },
     validationSchema: LoginSchema,
     onSubmit: async () => {
-      //User Login Service call - Upon success user is redirected to dashboard 
-      //Login fail snackbar displays error
       await login(values, setShowAlert, setAlertMessage)
     },
   });
@@ -96,7 +89,7 @@ export default function LoginForm() {
           </LoadingButton>
           </Stack>
 
-          {/* <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ my: 2 }}>
+          <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ my: 2 }}>
             <FormControlLabel
               control={<Checkbox {...getFieldProps('remember')} checked={values.remember} />}
               label="Remember me" />
@@ -104,7 +97,7 @@ export default function LoginForm() {
             <Link component={RouterLink} variant="subtitle2" to="#" underline="hover">
               Forgot password?
             </Link>
-          </Stack> */}
+          </Stack>
 
           
         </Form>
