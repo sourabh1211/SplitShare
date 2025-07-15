@@ -1,10 +1,10 @@
 import * as Yup from 'yup';
 import { useState } from 'react';
 import { useFormik, Form, FormikProvider } from 'formik';
-// material
+
 import {  Stack,  TextField, IconButton, InputAdornment,  Snackbar, Alert, Grid, Button } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
-// component
+
 import Iconify from '../Iconify';
 import { editUser} from '../../services/auth';
 
@@ -12,7 +12,6 @@ import useResponsive from '../../theme/hooks/useResponsive';
 import PropTypes from 'prop-types';
 import AlertBanner from '../AlertBanner';
 
-// ----------------------------------------------------------------------
 
 EditForm.prototype = {
     hideEditUser: PropTypes.func,
@@ -40,8 +39,6 @@ export default function EditForm({hideEditUser, emailId, firstName, lastName, sh
     },
     validationSchema: EditSchema,
     onSubmit: async () => {
-      //User Edit Service call - Upon success user is redirected to dashboard 
-      //Edit fail snackbar displays error
       const update_response = await editUser(values, setShowAlert, setAlertMessage, showHomeAlert, homeAlertMessage)
       {update_response && 
         hideEditUser()    
