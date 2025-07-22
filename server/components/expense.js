@@ -49,7 +49,7 @@ exports.addExpense = async (req, res) => {
             var newExp = new model.Expense(expense)
             var newExpense = await model.Expense.create(newExp)
 
-            //New expense is created now we need to update the split values present in the group 
+
             var update_response = await gorupDAO.addSplit(expense.groupId, expense.expenseAmount, expense.expenseOwner, expense.expenseMembers)
 
             res.status(200).json({
