@@ -21,14 +21,7 @@ exports.emailValidation = (email) => {
     }
 }
 
-exports.passwordValidation = (pass) => {
-    // if(pass)
-    // if (pass.search(/[a-z]/) >= 0 && pass.search(/[A-Z]/) >= 0 &&
-    //     pass.search(/[0-9]/) >= 0 &&
-    //     pass.search(/[!@#$%^&*()]/) >= 0 &&
-    //     pass.length >= 8) {
-    //     return true
-    // } 
+exports.passwordValidation = (pass) => { 
         if(pass && pass.length >=8){
             return true
         }
@@ -36,8 +29,6 @@ exports.passwordValidation = (pass) => {
         err.status = 400
         throw err
     }
-
-
 exports.currencyValidation = (currency) => {
     if (currency &&
         currency == "INR" ||
