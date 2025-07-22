@@ -16,7 +16,6 @@ Validation: Group Name not empty
 exports.createGroup = async (req, res) => {
     try {
         var newGroup = new model.Group(req.body)
-        //Performing validation on the input
         if (validator.notNull(newGroup.groupName) &&
             validator.currencyValidation(newGroup.groupCurrency)) {
 
@@ -27,15 +26,12 @@ exports.createGroup = async (req, res) => {
             var splitJson = {}
 
             for (var user of newGroup.groupMembers) {
-                //Validating the group Members exist in the DB 
                 var memberCheck = await validator.userValidation(user)
                 if (!memberCheck) {
                     var err = new Error('Invalid member id')
                     err.status = 400
                     throw err
                 }
-
-                //Adding user to the split Json and init with 0 
                 splitJson[user] = 0
             }
 
