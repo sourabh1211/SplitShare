@@ -26,7 +26,7 @@ exports.userReg = async (req, res) => {
         } else {
             //Accepts the inputs and create user model form req.body
             var newUser = new model.User(req.body)
-            //Performing validations
+            
             if (validator.emailValidation(newUser.emailId) &&
                 validator.passwordValidation(newUser.password) &&
                 validator.notNull(newUser.firstName)) {
