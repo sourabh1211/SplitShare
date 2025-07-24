@@ -1,12 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
-// material
 import { styled } from '@mui/material/styles';
-//
 import DashboardNavbar from './DashboardNavbar';
 import DashboardSidebar from './DashboardSidebar';
-
-// ----------------------------------------------------------------------
 
 const APP_BAR_MOBILE = 64;
 const APP_BAR_DESKTOP = 92;
@@ -30,19 +26,16 @@ const MainStyle = styled('div')(({ theme }) => ({
   }
 }));
 
-// ----------------------------------------------------------------------
-
 export default function DashboardLayout() {
   const [open, setOpen] = useState(false);
-  const user = JSON.parse(localStorage.getItem('profile'))
+  const user = JSON.parse(localStorage.getItem('profile'));
 
- useEffect(() => {
-   //If user logged in the page is auto directed to dashboard
-  if(user==null){
-    window.location.href="/"
-  } 
- }, [])
- 
+  useEffect(() => {
+    if (user == null) {
+      window.location.href = "/";
+    }
+  }, []);
+
   return (
     <RootStyle>
       <DashboardNavbar onOpenSidebar={() => setOpen(true)} />
