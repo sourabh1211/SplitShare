@@ -1,17 +1,11 @@
 import { useRef, useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-// @mui
 import { alpha } from '@mui/material/styles';
 import { Box, Divider, Typography, Stack, MenuItem, Avatar, IconButton } from '@mui/material';
-
 import gravatarUrl from 'gravatar-url';
-// components
 import MenuPopover from '../../components/MenuPopover';
-
 import { logout } from '../../services/auth';
-
-import configData from '../../config.json'
-// ----------------------------------------------------------------------
+import configData from '../../config.json';
 
 const MENU_OPTIONS = [
   {
@@ -31,12 +25,8 @@ const MENU_OPTIONS = [
   },
 ];
 
-// ----------------------------------------------------------------------
-
 export default function AccountPopover() {
-
-  const user = JSON.parse(localStorage.getItem('profile'))
-
+  const user = JSON.parse(localStorage.getItem('profile'));
 
   const anchorRef = useRef(null);
 
@@ -51,8 +41,8 @@ export default function AccountPopover() {
   };
 
   const handleLogOut = () => {
-    logout()
-  }
+    logout();
+  };
 
   return (
     <>
@@ -74,8 +64,8 @@ export default function AccountPopover() {
           }),
         }}
       >
-        {user&&
-        <Avatar src={gravatarUrl(user?.emailId, {size: 200, default: configData.USER_DEFAULT_LOGO_URL})} alt="photoURL" />}
+        {user &&
+          <Avatar src={gravatarUrl(user?.emailId, { size: 200, default: configData.USER_DEFAULT_LOGO_URL })} alt="photoURL" />}
       </IconButton>
 
       <MenuPopover
