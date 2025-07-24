@@ -1,9 +1,5 @@
-// component
 import Iconify from '../../components/Iconify';
-
-import configData from '../../config.json'
-
-// ----------------------------------------------------------------------
+import configData from '../../config.json';
 
 const getIcon = (name) => <Iconify icon={name} width={22} height={22} />;
 
