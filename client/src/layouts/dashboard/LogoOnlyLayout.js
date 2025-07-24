@@ -1,10 +1,6 @@
 import { Outlet } from 'react-router-dom';
-// material
 import { styled } from '@mui/material/styles';
-// components
 import Logo from '../components/Logo';
-
-// ----------------------------------------------------------------------
 
 const HeaderStyle = styled('header')(({ theme }) => ({
   top: 0,
@@ -17,8 +13,6 @@ const HeaderStyle = styled('header')(({ theme }) => ({
     padding: theme.spacing(5, 5, 0),
   },
 }));
-
-// ----------------------------------------------------------------------
 
 export default function LogoOnlyLayout() {
   return (
