@@ -1,16 +1,6 @@
 import { Outlet } from 'react-router-dom';
-
-
-
-// material
 import { styled } from '@mui/material/styles';
 import Logo from '../components/Logo';
-
-
-
-
-// ----------------------------------------------------------------------
-
 const HeaderStyle = styled('header')(({ theme }) => ({
   top: 0,
   left: 0,
