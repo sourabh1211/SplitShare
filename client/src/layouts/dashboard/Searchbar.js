@@ -1,11 +1,7 @@
 import { useState } from 'react';
-// material
 import { styled, alpha } from '@mui/material/styles';
 import { Input, Slide, Button, IconButton, InputAdornment, ClickAwayListener } from '@mui/material';
-// component
 import Iconify from '../../components/Iconify';
-
-// ----------------------------------------------------------------------
 
 const APPBAR_MOBILE = 64;
 const APPBAR_DESKTOP = 92;
@@ -20,7 +16,7 @@ const SearchbarStyle = styled('div')(({ theme }) => ({
   alignItems: 'center',
   height: APPBAR_MOBILE,
   backdropFilter: 'blur(6px)',
-  WebkitBackdropFilter: 'blur(6px)', // Fix on Mobile
+  WebkitBackdropFilter: 'blur(6px)',
   padding: theme.spacing(0, 3),
   boxShadow: theme.customShadows.z8,
   backgroundColor: `${alpha(theme.palette.background.default, 0.72)}`,
@@ -29,8 +25,6 @@ const SearchbarStyle = styled('div')(({ theme }) => ({
     padding: theme.spacing(0, 5),
   },
 }));
-
-// ----------------------------------------------------------------------
 
 export default function Searchbar() {
   const [isOpen, setOpen] = useState(false);
