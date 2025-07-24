@@ -3,7 +3,6 @@ import { set, sub } from 'date-fns';
 import { noCase } from 'change-case';
 import { faker } from '@faker-js/faker';
 import { useState, useRef } from 'react';
-// @mui
 import {
   Box,
   List,
@@ -20,14 +19,11 @@ import {
   ListItemButton,
   ListItem,
 } from '@mui/material';
-// utils
 import { fToNow } from '../../utils/formatTime';
-// components
 import Iconify from '../../components/Iconify';
 import Scrollbar from '../../components/Scrollbar';
 import MenuPopover from '../../components/MenuPopover';
 
-// ----------------------------------------------------------------------
 
 const NOTIFICATIONS = [
   {
@@ -149,8 +145,6 @@ export default function NotificationsPopover() {
   );
 }
 
-// ----------------------------------------------------------------------
-
 NotificationItem.propTypes = {
   notification: PropTypes.shape({
     createdAt: PropTypes.instanceOf(Date),
@@ -201,7 +195,6 @@ function NotificationItem({ notification }) {
   );
 }
 
-// ----------------------------------------------------------------------
 
 function renderContent(notification) {
   const title = (
