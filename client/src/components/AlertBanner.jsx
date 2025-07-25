@@ -2,8 +2,6 @@
 import { Box, Snackbar, Alert } from '@mui/material'
 import PropTypes from 'prop-types';
 import useResponsive from '../theme/hooks/useResponsive';
-
-
 AlertBanner.propTypes = {
     showAlert : PropTypes.bool,
     alertMessage: PropTypes.string,
@@ -11,7 +9,6 @@ AlertBanner.propTypes = {
     autoHideDuration: PropTypes.number,
     onCloseHandle: PropTypes.func,
 }
-
 export default function AlertBanner({showAlert, alertMessage, severity='error', autoHideDuration, onCloseHandle }) {
     const mdUp = useResponsive('up', 'md');
   return (
@@ -36,5 +33,3 @@ export default function AlertBanner({showAlert, alertMessage, severity='error', 
     </>
   )
 }
-
-
