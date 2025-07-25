@@ -1,6 +1,4 @@
 import * as api from '../api/index'
-
-
 export const addExpenseService = async (data,setAlert, setAlertMessage) => {
    try{
         const add_exp_response = await api.addExpense(data)
@@ -12,7 +10,6 @@ export const addExpenseService = async (data,setAlert, setAlertMessage) => {
         return false
    }
 }
-
 export const getGroupCategoryExpService = async (data, setAlert, setAlertMessage) => {
      try{
           return await api.getGroupCategoryExp(data)
@@ -35,8 +32,6 @@ export const getGroupMonthlyExpService = async (data, setAlert, setAlertMessage)
         return false
    }
 }
-
-
 export const getGroupDailyExpService = async (data, setAlert, setAlertMessage) => {
      try{
           return await api.getGroupDailyExp(data)
@@ -48,8 +43,6 @@ export const getGroupDailyExpService = async (data, setAlert, setAlertMessage) =
         return false
    }
 }
-
-
 export const getUserExpenseService = async(data, setAlert, setAlertMessage) => {
      try{
          const expense_details = await api.getUserExpense(data)
@@ -61,8 +54,6 @@ export const getUserExpenseService = async(data, setAlert, setAlertMessage) => {
          return false
      }
  }
-
-
  export const getUserMonthlyExpService = async (data, setAlert, setAlertMessage) => {
      try{
           return await api.getUserMonthlyExp(data)
@@ -74,8 +65,6 @@ export const getUserExpenseService = async(data, setAlert, setAlertMessage) => {
         return false
    }
 }
-
-
 export const getUserDailyExpService = async (data, setAlert, setAlertMessage) => {
      try{
           return await api.getUserDailyExp(data)
@@ -87,8 +76,6 @@ export const getUserDailyExpService = async (data, setAlert, setAlertMessage) =>
         return false
    }
 }
-
-
 export const getUserCategoryExpService = async (data, setAlert, setAlertMessage) => {
      try{
           return await api.getUserCategoryExp(data)
@@ -100,8 +87,6 @@ export const getUserCategoryExpService = async (data, setAlert, setAlertMessage)
         return false
    }
 }
-
-
 export const getRecentUserExpService = async (data, setAlert, setAlertMessage) => {
      try{
           return await api.getRecentUserExp(data)
@@ -112,7 +97,6 @@ export const getRecentUserExpService = async (data, setAlert, setAlertMessage) =
           return false
      }
 }
-
 export const getExpDetailsService = async (data, setAlert, setAlertMessage) => {
      try{
           return await api.getExpDetails(data)
@@ -123,8 +107,6 @@ export const getExpDetailsService = async (data, setAlert, setAlertMessage) => {
           return false
      }
 }
-
-
 export const editExpenseService = async (data,setAlert, setAlertMessage) => {
      try{
           const edit_exp_response = await api.editExpense(data)
@@ -136,7 +118,6 @@ export const editExpenseService = async (data,setAlert, setAlertMessage) => {
           return false
      }
   }
-
   export const deleteExpenseService = async (data,setAlert, setAlertMessage) => {
      try{
           const delete_exp_response = await api.deleteExpense(data)
