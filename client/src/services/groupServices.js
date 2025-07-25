@@ -1,6 +1,5 @@
 import { appendOwnerState } from '@mui/base'
 import * as api from '../api/index'
-
 export const getUserGroupsService = async (data) =>{
     try{
         const userGroups = await api.getUserGroups(data)
@@ -9,7 +8,6 @@ export const getUserGroupsService = async (data) =>{
         return false
     }
 }
-
 export const createGroupService = async (data, setAlert, setAlertMessage) => {
     try{
         const create_response = await api.createGroup(data)
@@ -21,8 +19,6 @@ export const createGroupService = async (data, setAlert, setAlertMessage) => {
         return false
     }
 }
-
-
 export const editGroupService = async (data, setAlert, setAlertMessage) => {
     try{
         const edit_response = await api.editGroup(data)
@@ -34,7 +30,6 @@ export const editGroupService = async (data, setAlert, setAlertMessage) => {
         return false
     }
 }
-
 export const getGroupDetailsService = async(data, setAlert, setAlertMessage) =>{
     try{
         const group_details = await api.getGroupDetails(data)
@@ -46,7 +41,6 @@ export const getGroupDetailsService = async(data, setAlert, setAlertMessage) =>{
         return false
     }
 }
-
 export const getGroupExpenseService = async(data, setAlert, setAlertMessage) => {
     try{
         const expense_details = await api.getGroupExpense(data)
@@ -58,7 +52,6 @@ export const getGroupExpenseService = async(data, setAlert, setAlertMessage) => 
         return false
     }
 }
-
 export const getGroupSettleService = async(data, setAlert, setAlertMessage) => {
     try{
         const settle_details = await api.getSettle(data)
@@ -70,7 +63,6 @@ export const getGroupSettleService = async(data, setAlert, setAlertMessage) => {
         return false
     }
 }
-
 export const settlementService = async(data, setAlert, setAlertMessage) => {
     try{
         const settle_details = await api.makeSettle(data)
