@@ -1,4 +1,3 @@
-
 function simplifyDebts(transactions){
     var splits = new Array()
     var transaction_map = new Map(Object.entries(transactions)); 
@@ -50,6 +49,7 @@ function simplifyDebts(transactions){
         helper();    
     }
 
+    
     settleSimilarFigures();
     helper();
 
