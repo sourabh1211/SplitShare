@@ -10,6 +10,7 @@ import Scrollbar from '../../components/Scrollbar';
 import NavSection from '../../components/NavSection';
 import Copyright from '../../components/Copyright';
 import dataConfig from '../../config.json';
+import navConfig from './NavConfig';
 
 const DRAWER_WIDTH = 280;
 
