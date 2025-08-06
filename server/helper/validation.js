@@ -29,6 +29,7 @@ exports.passwordValidation = (pass) => {
         err.status = 400
         throw err
     }
+
 exports.currencyValidation = (currency) => {
     if (currency &&
         currency == "INR" ||
