@@ -1,5 +1,4 @@
 var logger = require('./logger')
-
 requestLogger = async (req, res, next) => {
     try {
         logger.info(`API HIT : [${req.method}] ${req.url}`)
@@ -8,5 +7,4 @@ requestLogger = async (req, res, next) => {
         next(err)
     }
 }
-
 module.exports = requestLogger;
