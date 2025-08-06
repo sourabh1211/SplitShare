@@ -1,10 +1,12 @@
 var logger = require('./logger')
-const requestLogger = async (req, res, next) => {
+
+requestLogger = async (req, res, next) => {
     try {
-        logger.info(`API HIT : [${req.method}] ${req.url}`)
+        logger.info(`API HIT : [${req.method}] ${req.url} | ${JSON.stringify(req.body)}`)
         next()
     } catch (err) {
         next(err)
     }
 }
+
 module.exports = requestLogger;
