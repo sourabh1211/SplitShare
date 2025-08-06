@@ -1,8 +1,10 @@
 var jwt = require('jsonwebtoken')
 var logger = require('./logger')
+
 exports.generateAccessToken = (user) => {
     return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET)
 }
+
 exports.validateToken = (req, res, next) => {
     if (process.env.DISABLE_API_AUTH == "true") {
         next()
@@ -30,6 +32,7 @@ exports.validateToken = (req, res, next) => {
         }
     }
 }
+
 exports.validateUser = (user, emailId) => {
     if (process.env.DISABLE_API_AUTH != "true" &&
         user != emailId
