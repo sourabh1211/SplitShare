@@ -75,7 +75,6 @@ Whether you're managing trips, shared rentals, or team expenses, SplitShare simp
 - **Axios** – HTTP communication
 - **Material UI** – Component library
 - **Chart.js & React-chartjs-2** – Analytics graphs
-- **Gravatar** – Profile avatars
 
 ### 🛠️ Backend
 
