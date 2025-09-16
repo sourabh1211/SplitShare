@@ -1,0 +1,15 @@
+2025-09-16T09:37:15.326Z | INFO   | Server started in PORT | 9000
+2025-09-16T09:37:16.560Z | INFO   | DB Connection Established
+2025-09-16T09:37:26.655Z | INFO   | API HIT : [GET] / | {}
+2025-09-16T09:37:26.656Z | ERROR  | [Invalid Route] /
+2025-09-16T09:37:26.800Z | INFO   | API HIT : [GET] /favicon.ico | {}
+2025-09-16T09:37:26.801Z | ERROR  | [Invalid Route] /favicon.ico
+2025-09-16T09:41:06.133Z | INFO   | API HIT : [POST] /api/users/v1/login | {"emailId":"sv@gmail.com","password":"123456789","remember":true}
+2025-09-16T09:41:07.309Z | INFO   | API HIT : [POST] /api/expense/v1/user | {"user":"sv@gmail.com"}
+2025-09-16T09:41:07.463Z | INFO   | API HIT : [POST] /api/group/v1/user | {"status":"Success","message":"User Login Success","userId":"686f472de8b1e588892008cb","emailId":"sv@gmail.com","firstName":"Sourabh","lastName":"vr","accessToken":"eyJhbGciOiJIUzI1NiJ9.c3ZAZ21haWwuY29t.bIt9sXtgO1ZQ0n281hsWlkEcrYqKTOJb7DFuZ1tbikQ"}
+2025-09-16T09:41:07.635Z | INFO   | API HIT : [POST] /api/group/v1/user | {"status":"Success","message":"User Login Success","userId":"686f472de8b1e588892008cb","emailId":"sv@gmail.com","firstName":"Sourabh","lastName":"vr","accessToken":"eyJhbGciOiJIUzI1NiJ9.c3ZAZ21haWwuY29t.bIt9sXtgO1ZQ0n281hsWlkEcrYqKTOJb7DFuZ1tbikQ"}
+2025-09-16T09:41:07.640Z | INFO   | API HIT : [POST] /api/expense/v1/user/monthlyExp | {"user":"sv@gmail.com"}
+2025-09-16T09:41:07.651Z | INFO   | API HIT : [POST] /api/expense/v1/user/recent | {"user":"sv@gmail.com"}
+2025-09-16T09:41:07.657Z | INFO   | API HIT : [POST] /api/expense/v1/user/categoryExp | {"user":"sv@gmail.com"}
+2025-09-16T09:41:07.707Z | INFO   | API HIT : [POST] /api/expense/v1/user/dailyExp | {"user":"sv@gmail.com"}
+2025-09-16T09:41:16.627Z | INFO   | API HIT : [GET] /api/users/v1/emailList | {}
