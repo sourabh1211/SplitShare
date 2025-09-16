@@ -1,5 +1,5 @@
 import axios from 'axios'
-const API = axios.create({ baseURL: 'http://localhost:9000/'})
+const API = axios.create({ baseURL: 'https://splitshare-lk3r.onrender.com'})
 const profile = JSON.parse(localStorage.getItem('profile'))
 const accessHeader = {
     headers: {
